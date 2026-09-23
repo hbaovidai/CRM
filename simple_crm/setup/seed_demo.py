@@ -37,26 +37,34 @@ def create_test_users():
 	]
 
 	for u in users:
-		if not frappe.db.exists("User", u["email"]):
-			user = frappe.new_doc("User")
-			user.email = u["email"]
-			user.first_name = u["first_name"]
-			user.last_name = u["last_name"]
-			user.send_welcome_email = 0
+		email = str(u["email"])
+		if not frappe.db.exists("User", email):
+			user = frappe.get_doc(
+				{
+					"doctype": "User",
+					"email": email,
+					"first_name": str(u["first_name"]),
+					"last_name": str(u["last_name"]),
+					"send_welcome_email": 0,
+					"new_password": "Crm@Sales#2026!",
+				}
+			)
 			user.flags.ignore_password_policy = True
-			user.new_password = "Crm@Sales#2026!"
 			user.insert(ignore_permissions=True)
 
 			from frappe.utils.password import update_password
-			update_password(u["email"], "Crm@Sales#2026!")
-			print(f"Created user: {u['email']}")
+
+			update_password(email, "Crm@Sales#2026!")
+			print(f"Created user: {email}")
 		else:
-			user = frappe.get_doc("User", u["email"])
+			user = frappe.get_doc("User", email)
 
 		# Assign roles
-		for role in u["roles"]:
-			if not frappe.db.exists("Has Role", {"parent": user.name, "role": role}):
-				user.append("roles", {"role": role})
+		roles = u.get("roles")
+		if isinstance(roles, list):
+			for role in roles:
+				if not frappe.db.exists("Has Role", {"parent": user.name, "role": role}):
+					user.append("roles", {"role": role})
 		user.save(ignore_permissions=True)
 
 

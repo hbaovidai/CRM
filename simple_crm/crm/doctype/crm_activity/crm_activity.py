@@ -10,6 +10,11 @@ ALLOWED_REFERENCE_DOCTYPES = ["CRM Lead", "CRM Customer", "CRM Opportunity"]
 
 
 class CRMActivity(Document):
+	reference_doctype: str
+	reference_name: str
+	status: str
+	activity_date: str | None
+
 	def validate(self):
 		self.validate_reference_doctype()
 
