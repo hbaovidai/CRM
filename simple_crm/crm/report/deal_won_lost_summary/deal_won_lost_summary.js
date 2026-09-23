@@ -1,7 +1,7 @@
 // Copyright (c) 2026, Frappe Team and contributors
 // For license information, please see license.txt
 
-frappe.query_reports["Deal Won/Lost Summary"] = {
+frappe.query_reports["Deal Won-Lost Summary"] = {
 	filters: [
 		{
 			fieldname: "sales_owner",

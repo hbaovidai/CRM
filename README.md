@@ -30,7 +30,7 @@ Hệ thống quản lý quan hệ khách hàng (CRM) xây dựng trên nền t�
 - **Lead Conversion Funnel**: Phễu chuyển đổi từ Lead mới -> Đã tiếp cận -> Đạt chuẩn -> Chuyển đổi thành công.
 - **Opportunity Pipeline**: Tổng hợp cơ hội theo từng giai đoạn bán hàng kèm đồ thị trực quan.
 - **Overdue Follow-ups**: Cảnh báo tức thì danh sách nhiệm vụ và lead quá hạn chưa được chăm sóc.
-- **Deal Won/Lost Summary**: Thống kê số lượng và doanh thu các thương vụ Thắng / Thua theo từng tháng.
+- **Deal Won-Lost Summary**: Thống kê số lượng và doanh thu các thương vụ Thắng / Thua theo từng tháng.
 
 ### 5. CRM Workspace
 - Không gian làm việc trực quan với 6 thẻ số liệu nhanh (Number Cards), lối tắt truy cập nhanh và danh mục báo cáo phân tích.
