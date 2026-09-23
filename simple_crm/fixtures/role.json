@@ -1,0 +1,26 @@
+[
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "doctype": "Role",
+  "is_custom": 0,
+  "name": "CRM Sales User",
+  "role_name": "CRM Sales User"
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "doctype": "Role",
+  "is_custom": 0,
+  "name": "CRM Sales Manager",
+  "role_name": "CRM Sales Manager"
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "doctype": "Role",
+  "is_custom": 0,
+  "name": "CRM Admin",
+  "role_name": "CRM Admin"
+ }
+]

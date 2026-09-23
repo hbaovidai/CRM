@@ -1,0 +1,37 @@
+[
+ {
+  "description": "Prospects coming from company website or landing pages",
+  "doctype": "CRM Lead Source",
+  "is_active": 1,
+  "name": "Website",
+  "source_name": "Website"
+ },
+ {
+  "description": "Referred by existing customers or partners",
+  "doctype": "CRM Lead Source",
+  "is_active": 1,
+  "name": "Referral",
+  "source_name": "Referral"
+ },
+ {
+  "description": "Outbound sales calls",
+  "doctype": "CRM Lead Source",
+  "is_active": 1,
+  "name": "Cold Call",
+  "source_name": "Cold Call"
+ },
+ {
+  "description": "Social media channels (LinkedIn, Facebook, etc.)",
+  "doctype": "CRM Lead Source",
+  "is_active": 1,
+  "name": "Social Media",
+  "source_name": "Social Media"
+ },
+ {
+  "description": "Trade shows, webinars, and networking events",
+  "doctype": "CRM Lead Source",
+  "is_active": 1,
+  "name": "Event",
+  "source_name": "Event"
+ }
+]

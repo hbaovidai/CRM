@@ -1,0 +1,214 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "naming_series:",
+ "creation": "2026-09-23 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "activity_type",
+  "subject",
+  "activity_date",
+  "status",
+  "column_break_1",
+  "sales_owner",
+  "contact",
+  "direction",
+  "duration_minutes",
+  "reference_section",
+  "reference_doctype",
+  "reference_name",
+  "outcome_section",
+  "outcome",
+  "next_action",
+  "notes_section",
+  "notes"
+ ],
+ "fields": [
+  {
+   "default": "CRM-ACT-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "CRM-ACT-.YYYY.-.#####",
+   "reqd": 1
+  },
+  {
+   "default": "Call",
+   "fieldname": "activity_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Activity Type",
+   "options": "Call\nEmail\nMeeting\nNote",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "activity_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Activity Date",
+   "reqd": 1
+  },
+  {
+   "default": "Completed",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Planned\nCompleted\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "__user",
+   "fieldname": "sales_owner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Owner",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Link",
+   "label": "Contact",
+   "options": "CRM Contact"
+  },
+  {
+   "fieldname": "direction",
+   "fieldtype": "Select",
+   "label": "Direction",
+   "options": "Inbound\nOutbound"
+  },
+  {
+   "default": "0",
+   "fieldname": "duration_minutes",
+   "fieldtype": "Int",
+   "label": "Duration (Minutes)"
+  },
+  {
+   "fieldname": "reference_section",
+   "fieldtype": "Section Break",
+   "label": "Linked Entity"
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Reference DocType",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Reference Name",
+   "options": "reference_doctype",
+   "reqd": 1
+  },
+  {
+   "fieldname": "outcome_section",
+   "fieldtype": "Section Break",
+   "label": "Outcome & Follow-up"
+  },
+  {
+   "fieldname": "outcome",
+   "fieldtype": "Small Text",
+   "label": "Outcome"
+  },
+  {
+   "fieldname": "next_action",
+   "fieldtype": "Small Text",
+   "label": "Next Action"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "CRM Activity",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CRM Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CRM Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CRM Sales User",
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "subject,reference_name",
+ "sort_field": "activity_date",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "subject",
+ "track_changes": 1
+}

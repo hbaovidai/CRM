@@ -1,0 +1,240 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "naming_series:",
+ "creation": "2026-09-22 23:50:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "lead_name",
+  "company_name",
+  "column_break_1",
+  "email",
+  "phone",
+  "details_section",
+  "source",
+  "sales_owner",
+  "column_break_2",
+  "status",
+  "estimated_value",
+  "next_follow_up",
+  "qualification_section",
+  "qualified_on",
+  "unqualified_reason",
+  "column_break_3",
+  "converted_customer",
+  "converted_opportunity",
+  "last_contact_date",
+  "notes_section",
+  "notes"
+ ],
+ "fields": [
+  {
+   "default": "CRM-LEAD-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "CRM-LEAD-.YYYY.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lead_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lead Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Lead Details"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lead Source",
+   "options": "CRM Lead Source",
+   "reqd": 1
+  },
+  {
+   "default": "__user",
+   "fieldname": "sales_owner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Sales Owner",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "New",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "New\nContacted\nQualified\nUnqualified\nConverted",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "estimated_value",
+   "fieldtype": "Currency",
+   "label": "Estimated Value"
+  },
+  {
+   "fieldname": "next_follow_up",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Next Follow Up"
+  },
+  {
+   "fieldname": "qualification_section",
+   "fieldtype": "Section Break",
+   "label": "Qualification & Conversion"
+  },
+  {
+   "fieldname": "qualified_on",
+   "fieldtype": "Datetime",
+   "label": "Qualified On",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.status=='Unqualified'",
+   "fieldname": "unqualified_reason",
+   "fieldtype": "Small Text",
+   "label": "Unqualified Reason"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "converted_customer",
+   "fieldtype": "Link",
+   "label": "Converted Customer",
+   "options": "CRM Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "converted_opportunity",
+   "fieldtype": "Link",
+   "label": "Converted Opportunity",
+   "options": "CRM Opportunity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_contact_date",
+   "fieldtype": "Datetime",
+   "label": "Last Contact Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-22 23:50:00.000000",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "CRM Lead",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CRM Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CRM Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CRM Sales User",
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "lead_name,company_name,email,phone",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "lead_name",
+ "track_changes": 1
+}

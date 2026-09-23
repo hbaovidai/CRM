@@ -262,3 +262,31 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+# Fixtures
+# --------
+fixtures = [
+	"Role",
+	"CRM Lead Source",
+	"CRM Lost Reason"
+]
+
+# Permissions
+# -----------
+permission_query_conditions = {
+	"CRM Lead": "simple_crm.permissions.get_lead_conditions",
+	"CRM Customer": "simple_crm.permissions.get_customer_conditions",
+	"CRM Opportunity": "simple_crm.permissions.get_opportunity_conditions",
+	"CRM Task": "simple_crm.permissions.get_task_conditions",
+	"CRM Activity": "simple_crm.permissions.get_activity_conditions",
+	"CRM Contact": "simple_crm.permissions.get_contact_conditions",
+}
+
+has_permission = {
+	"CRM Lead": "simple_crm.permissions.has_lead_permission",
+	"CRM Customer": "simple_crm.permissions.has_customer_permission",
+	"CRM Opportunity": "simple_crm.permissions.has_opportunity_permission",
+	"CRM Task": "simple_crm.permissions.has_task_permission",
+	"CRM Activity": "simple_crm.permissions.has_activity_permission",
+	"CRM Contact": "simple_crm.permissions.has_contact_permission",
+}
+

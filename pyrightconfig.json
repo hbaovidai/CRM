@@ -1,0 +1,6 @@
+{
+  "extraPaths": [
+    "../frappe",
+    "../../env/lib/python3.14/site-packages"
+  ]
+}

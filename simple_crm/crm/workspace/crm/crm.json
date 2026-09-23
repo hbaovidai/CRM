@@ -1,0 +1,195 @@
+{
+ "app": "simple_crm",
+ "charts": [],
+ "content": "[{\"id\":\"hdr_crm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>CRM Workspace</b></span>\",\"col\":12}},{\"id\":\"sc_leads\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"CRM Lead\",\"col\":4}},{\"id\":\"sc_opps\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"CRM Opportunity\",\"col\":4}},{\"id\":\"sc_custs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"CRM Customer\",\"col\":4}},{\"id\":\"sc_tasks\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"CRM Task\",\"col\":4}},{\"id\":\"sc_acts\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"CRM Activity\",\"col\":4}},{\"id\":\"sc_conts\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"CRM Contact\",\"col\":4}}]",
+ "creation": "2026-09-23 00:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "briefcase",
+ "idx": 1,
+ "is_hidden": 0,
+ "label": "CRM",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "CRM Lead",
+   "link_count": 0,
+   "link_to": "CRM Lead",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "CRM Opportunity",
+   "link_count": 0,
+   "link_to": "CRM Opportunity",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "CRM Customer",
+   "link_count": 0,
+   "link_to": "CRM Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "CRM Contact",
+   "link_count": 0,
+   "link_to": "CRM Contact",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "CRM Task",
+   "link_count": 0,
+   "link_to": "CRM Task",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "CRM Activity",
+   "link_count": 0,
+   "link_to": "CRM Activity",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Lead Conversion Funnel",
+   "link_count": 0,
+   "link_to": "Lead Conversion Funnel",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Opportunity Pipeline",
+   "link_count": 0,
+   "link_to": "Opportunity Pipeline",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Overdue Follow-ups",
+   "link_count": 0,
+   "link_to": "Overdue Follow-ups",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Deal Won/Lost Summary",
+   "link_count": 0,
+   "link_to": "Deal Won/Lost Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "CRM Settings",
+   "link_count": 0,
+   "link_to": "CRM Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-09-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "CRM",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "CRM Admin"
+  },
+  {
+   "role": "CRM Sales Manager"
+  },
+  {
+   "role": "CRM Sales User"
+  }
+ ],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "CRM Lead",
+   "link_to": "CRM Lead",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "CRM Opportunity",
+   "link_to": "CRM Opportunity",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "CRM Customer",
+   "link_to": "CRM Customer",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "CRM Task",
+   "link_to": "CRM Task",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "CRM Activity",
+   "link_to": "CRM Activity",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "CRM Contact",
+   "link_to": "CRM Contact",
+   "type": "DocType"
+  }
+ ],
+ "title": "CRM"
+}

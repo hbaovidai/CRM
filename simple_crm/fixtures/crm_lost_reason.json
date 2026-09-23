@@ -1,0 +1,37 @@
+[
+ {
+  "description": "Price is higher than customer budget",
+  "doctype": "CRM Lost Reason",
+  "is_active": 1,
+  "name": "High Price",
+  "reason_name": "High Price"
+ },
+ {
+  "description": "Required features or integrations are missing",
+  "doctype": "CRM Lost Reason",
+  "is_active": 1,
+  "name": "Feature Missing",
+  "reason_name": "Feature Missing"
+ },
+ {
+  "description": "Customer selected another vendor or competitor",
+  "doctype": "CRM Lost Reason",
+  "is_active": 1,
+  "name": "Chose Competitor",
+  "reason_name": "Chose Competitor"
+ },
+ {
+  "description": "Customer project cancelled or postponed indefinitely",
+  "doctype": "CRM Lost Reason",
+  "is_active": 1,
+  "name": "Project Cancelled",
+  "reason_name": "Project Cancelled"
+ },
+ {
+  "description": "Customer stopped responding to follow-ups",
+  "doctype": "CRM Lost Reason",
+  "is_active": 1,
+  "name": "No Response",
+  "reason_name": "No Response"
+ }
+]
